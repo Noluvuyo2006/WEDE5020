@@ -54,3 +54,11 @@ Storyzangu Hub. (2025) Available at: https://unsplash.com/photos/a-teacher-assis
 The Love Trust, 2009, Available at: https://www.lovetrust.co.za/ [Accessed 28 March 2026]
 
 The Love Trust, 2017, Available at: https://youtu.be/c5FEYqXHnjQ?si=RtoLKGFarFNilNAb [Accessed 10 April 2026]
+
+
+## Part 2 - CSS
+I added CSS features such as background, font-family, font size, different font colours for the different heading styles, text alignment, margin and padding. 
+
+CSS layouts such as the flexbox, grid-template-columns and display. CSS pseudoclasses such as hover to create interactive elements to my navigation menu, images, buttons and dropdown content. 
+
+I used media queries to apply to the different screen sizes when visiting my website. 

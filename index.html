@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Love Trust is a non-profit organisation in Midrand, South Africa,
+                 focused on providing quality Christian education and empowering vulnerable children and 
+                 communities.">
+    <meta name="keywords" content="Early Childhood Development, Nokuphila Primary School, vulnerable children
+                 quality Christian education, non-profit organisation in Midrand, The Love Trust NGO">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <style>
+        h1{
+            color: antiquewhite;
+        }
+
+        h2{
+            color: bisque;
+        }
+
+        h3{
+            color: blanchedalmond;
+        }
+
+        header{
+            background-color: rgb(255, 255, 255);
+        }
+
+        footer{
+            background-color: blanchedalmond ;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navigation{
+            width:100%;
+        }
+
+        .nav-menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-wrap:wrap;
+            list-style:none;
+            margin:0;
+            padding:0;
+            width:100%;
+            background-color: rgb(235, 180, 97);
+        }
+
+        .nav-menu li{
+            flex:1;
+            min-width:120px;
+            text-align:center;
+        }
+
+        .nav-menu a{
+            display:block;
+            padding:15px 10px;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .nav-menu a:hover{
+            background-color:rgb(245, 180, 82);
+        }
+
+       .nav-menu a.active {
+            background-color: rgb(200, 140, 60);
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 10px 15px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #8c6b07;
+        }
+
+        .donate-box {
+            background-color: white;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            text-align: center;
+        }
+
+        .donate-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: rgb(248, 246, 240);
+            color: rgb(224, 198, 150);
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .donate-btn:hover {
+           background-color: #e9e2a7; /* Beige */
+        color: rgb(223, 122, 39)
+        }
+
+        .footer-text{
+            text-align:center;
+        }
+
+        .hero {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+        }
+
+        /* HERO IMAGE ANIMATION */
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            animation: zoomFade 2.5s ease-in-out forwards;
+        }
+
+        /* Smooth zoom + fade in */
+        @keyframes zoomFade {
+            0% {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* TEXT ANIMATION */
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+
+            animation: slideUp 2s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translate(-50%, 60%);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <!-- Webpage title -->
+    <title> The Love Trust - Home </title>
+</head>
+<body>
+    
+    <header>
+     <!-- Navigation menu -->
+      <nav aria-label="Main navigation">
+        <div class="navigation">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </div>
+     </nav>
+
+        <div class="container">
+            <h1 style="color: antiquewhite;"> The Love Trust </h1>
+            <!-- Logo -->
+             <img src="images/logo.png"
+                  alt="The Love Trust logo"
+                  style="max-width:150px; width:100%; height:auto;">
+        </div>
+    </header>
+    <br>
+
+    <center>
+    <!-- Hero-image -->
+    <section class="hero-image"> <img src="images/hero_image-children.jpg" alt="The Love trust hero-image" class="hero-image" width = "90%" height = "250" >
+    </center>
+
+    </section>
+        
+    <main>
+        <h2 style="color: bisque;"> Welcome to The Love Trust NPO </h2>
+        <div class= "container" >
+            <div>   
+             <!-- Brief introduction -->
+             <p>
+             The Love Trust non-profit organisation aims to reduce poverty and inequality through quality 
+             Christian education in vulnerable communities, specifically the underprivileged children and 
+             women.
+             </p>
+            </div>
+        
+            <div>
+                <h3 style="color: blanchedalmond;"> Empowering underprivileged communities through education</h3>
+                 <p> Make a difference in the lives of underprivileged children 
+                 and communities
+                 </p>
+            </div>
+        
+                <br>
+                <div class="button">
+                       <!-- Call-to-action buttons -->
+                     <div class="donate-box">
+                        <a href="donate.html" class="donate-btn" onclick="thankUser()"> Donate now 
+                        </a>
+                    </div>
+
+                    <a href="get_involved.html" class="button">
+                         Get involved 
+                    </a>
+                 </div>
+        </div>
+    </main>
+        <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
+
+    <footer>
+        <p class="footer-text">
+            &copy; 2009 The Love Trust&trade;
+        </p>
+    </footer>
+    <script>
+        window.onload = function () {
+        alert("Welcome to The Love Trust website 💛 Helping communities through education.");
+        };
+
+        //Scroll to top button
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            }); 
+        }
+
+        //Donation thank-you message
+        function thankUser() {
+            alert("Thank you for supporting The Love Trust 💛");
+        }
+
+    </script>
+</body>
+</html>

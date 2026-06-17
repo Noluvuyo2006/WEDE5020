@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Love Trust is a non-profit organisation in Midrand, South Africa,
+                 focused on providing quality Christian education and empowering vulnerable children and 
+                 communities.">
+    <meta name="keywords" content="Early Childhood Development, Nokuphila Primary School, vulnerable children
+                 quality Christian education, non-profit organisation in Midrand, The Love Trust NGO">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <style>
+        h1{
+            color: antiquewhite;
+        }
+
+        h2{
+            color: bisque;
+        }
+
+        h3{
+            color: blanchedalmond;
+        }
+
+        .navigation{
+            width:100%;
+        }
+
+        .nav-menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-wrap:wrap;
+            list-style:none;
+            margin:0;
+            padding:0;
+            width:100%;
+            background-color: rgb(235, 180, 97);
+        }
+
+        .nav-menu li{
+            flex:1;
+            min-width:120px;
+            text-align:center;
+        }
+
+        .nav-menu a{
+            display:block;
+            padding:15px 10px;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .nav-menu a:hover{
+            background-color:rgb(245, 180, 82);
+        }
+
+       .nav-menu a.active {
+            background-color: rgb(200, 140, 60);
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 10px 15px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #8c6b07;
+        }
+
+        input, select, textarea {
+            color: black !important;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: black;
+        }
+
+        form button{
+            background-color: rgba(221, 158, 21, 0.747);
+            border: none;
+            cursor: pointer;
+        }
+
+        form .button:hover{
+            background: none;
+        }
+
+        #responseBox {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e6ffe6;
+            border-left: 5px solid green;
+            display: none;
+            width: 420px;
+        }
+
+        .footer-text{
+            text-align:center;
+        }
+    </style>
+    
+    <!-- Webpage title -->
+    <title> The Love Trust - Enquiries </title>
+</head>
+<body>
+
+   <header>
+        <!-- Navigation menu -->
+      <nav aria-label="Main navigation">
+        <div class="navigation">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </div>
+     </nav>
+
+        <div class="container">
+            <h1 style="color: antiquewhite;"> The Love Trust </h1>
+             <!-- Logo -->
+             <img src="images/logo.png"
+                  alt="The Love Trust logo"
+                  style="max-width:150px; width:100%; height:auto;">
+        </div>
+    </header>
+    <br>
+
+   <main style="display:flex; flex-direction:column;">
+        <!-- Enquiry form -->
+        <h2 style="color: bisque;"> Enquiry form </h2>
+        <form id="enquiryForm" action="thankyou.html" method="post">
+            <!-- User's name input -->
+            <label> Full Name </label> <br>
+            <input 
+                type="text" 
+                id="fullname"
+                placeholder="Enter your full name"
+                minlength="10"
+                maxlength="40"
+                required> 
+            <div class="error" id="nameError"></div> <br><br>
+
+            <!-- User's email input -->
+            <label> Email </label> <br>
+            <input 
+                type="email" 
+                id="email"
+                placeholder="example@gmail.com"
+                required> 
+            <div class="error" id="emailError"></div> <br><br>
+
+            <!-- Dropdown list for type of enquiry -->
+            <label>Interested In</label> <br>
+            <select id="interest" required>
+                <option value="">Select an option</option>
+                <option value="services">Services</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="sponsor">Sponsor</option>
+            </select>
+            <div class="error" id="interestError"></div>
+             <br><br>
+
+            <!-- Message textbox -->
+            <label> Message </label> <br>
+            <textarea 
+                name="Message"
+                id="message" 
+                rows="5" 
+                cols="40"
+                placeholder="Type your message..."
+                minlength="10"
+                maxlength="50"
+                required></textarea> 
+            <div class="error" id="messageError"></div><br><br>
+
+            <!-- Submit button -->
+            <div class="button">
+                <button type="submit"> Submit enquiry </button>
+            </div>
+        </form>
+           <!-- Response output -->
+                    <div id="responseBox"></div>
+    </main>
+            <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
+    <footer>
+        <p class="footer-text">
+            &copy; 2009 The Love Trust&trade;
+        </p>
+    </footer>
+
+   <script>
+        document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // stop page reload
+
+            // Get correct values
+            let name = document.getElementById("fullname").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let interest = document.getElementById("interest").value;
+
+            let response = "";
+
+            // Clear old errors (optional improvement)
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+            document.getElementById("interestError").innerText = "";
+
+            let valid = true;
+
+            // NAME validation
+            if (name.length < 10 || name.length > 40) {
+                document.getElementById("nameError").innerText =
+                    "Name must be between 10 and 40 characters.";
+                valid = false;
+            }
+
+            // EMAIL validation (basic regex)
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                 document.getElementById("emailError").innerText =
+                    "Enter a valid email address.";
+                valid = false;
+            }
+
+            // MESSAGE validation
+            if (message.length < 10 || message.length > 50) {
+                document.getElementById("messageError").innerText =
+                    "Message must be 10–50 characters.";
+                valid = false;
+            }
+
+            // INTEREST validation
+            if (interest === "") {
+                document.getElementById("interestError").innerText =
+                    "Please select an option.";
+                valid = false;
+            }
+
+            // If invalid, stop
+            if (!valid) return;
+
+            // Processing logic
+            switch (interest) {
+
+                case "services":
+                    response = "Thank you " + name + ". Our services include education and training programmes.";
+                    break;
+
+                case "volunteer":
+                    response = "Thank you " + name + ". Volunteer applications are open. We will contact you soon.";
+                    break;
+
+                case "sponsor":
+                    response = "Thank you " + name + ". Sponsorship starts from R500/month.";
+                    break;
+
+                default:
+                    response = "Invalid selection.";
+            }
+
+             // Show response
+            let box = document.getElementById("responseBox");
+            box.style.display = "block";
+            box.innerHTML = response;
+        });
+
+        document.querySelector("form").addEventListener("submit", function(event){
+
+            let name = document.getElementById("fullname").value;
+
+            if(name.length < 3){
+                alert("Please enter a valid name.");
+                event.preventDefault();
+            }
+
+        });
+
+       //Scroll to top button
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            }); 
+        }
+    </script>
+</body>
+</html>

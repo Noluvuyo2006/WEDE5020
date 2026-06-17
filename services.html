@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Love Trust is a non-profit organisation in Midrand, South Africa,
+                 focused on providing quality Christian education and empowering vulnerable children and 
+                 communities.">
+    <meta name="keywords" content="Early Childhood Development, Nokuphila Primary School, vulnerable children
+                 quality Christian education, non-profit organisation in Midrand, The Love Trust NGO">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <style>
+        h1{
+            color: antiquewhite;
+        }
+
+        h2{
+            color: bisque;
+        }
+
+        h3{
+            color: blanchedalmond;
+        }
+
+                .navigation{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            background-color: rgb(235, 180, 97);
+            padding: 15px;
+            margin: 0;
+        }
+
+        .nav-menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-wrap:wrap;
+            list-style:none;
+            margin:0;
+            padding:0;
+            width:100%;
+            background-color: rgb(235, 180, 97);
+        }
+
+        .nav-menu li{
+            flex:1;
+            min-width:120px;
+            text-align:center;
+        }
+
+        .nav-menu a{
+            display:block;
+            padding:15px 10px;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .nav-menu a:hover{
+            background-color:rgb(245, 180, 82);
+        }
+
+       .nav-menu a.active {
+            background-color: rgb(200, 140, 60);
+        }
+
+        .footer-text{
+            text-align:center;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 10px 15px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #8c6b07;
+        }
+    </style>
+       
+    <!-- Webpage title -->
+    <title> The Love Trust - Services</title>
+
+        <!-- jQuery library and files that load lightbox, -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- External javascript saved in js_assets folder -->
+        <script src="js_assets/myjavascript.js"></script>
+
+        <!-- Lightbox2 CSS - Provides the styling for the Lightbox, Image positioning, Next/Previous 
+        buttons, Close button (×), Captions. Without this file, the Lightbox may still open but will be unstyled.-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+        <!--Lightbox2 js function (was build using jQuery, to function it needs jQuery to be loaded 
+        first). Contains the Lightbox functionality, Opening images in a popup, Closing images,
+        Gallery navigation, Image animations-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+<body>
+    <header>    
+     <!-- Navigation menu -->
+      <nav aria-label="Main navigation">
+        <div class="navigation">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </div>
+     </nav>
+        
+        <div class="container">
+           <h1 style="color: antiquewhite;"> The Love Trust </h1>
+             <!-- Logo -->
+             <img src = "images/logo.png" alt = "The Love Trust logo" width="15%" height="100">
+       </div>
+    
+    </header>
+    <br>
+
+    <main>
+        <!-- Organisation's services -->
+            <h2 style="color: bisque;"> Our Services </h2>
+            <div class="container">
+                <div>
+                   <h3 style="color: blanchedalmond;"> Nokuphila School </h3>
+                       <p>
+                         We provide quality and affordable education to the children.
+                       </p>
+                </div>
+
+                <div>
+                    <h3 style="color: blanchedalmond;"> Early Childhood Development Training</h3>
+                        <p>
+                         We provide tertiary education and training for educators, more especially
+                         Early Childhood Development practitioners and Primary School educators.
+                       </p>
+                </div>
+
+                <div>
+                     <h3 style="color: blanchedalmond;"> Community programmes </h3>
+                        <p>
+                         We support as well as empower black women seeking for better work opportunities.
+                         We strive to reduce poverty in the community and enquality through education, 
+                         and the educators. We improve the children's nutrition and their psycho-social
+                         behaviour.
+                       </p>
+                </div>
+            </div>
+        <br>
+        <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/c5FEYqXHnjQ?si=4U929KLKqLcNTFzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br>
+
+        <!-- Images for the service-->
+        <div class="services">
+                <!-- Bigger image loaded after clicking the small image -->
+                    <a href="images/happy_children_large.jpg" data-lightbox="myservices" data-title="Happy children">
+                        <!-- Small image -->
+                        <img src="images/happy_children.jpg" alt="Children are smiling and hugging each other" width="30%" height="200">
+                     </a> 
+
+                <!-- Bigger image loaded after clicking the small image -->
+                    <a href="images/teacher_helping_learner_large.jpg" data-lightbox="myservices" data-title="Teacher helipng the learner">
+                        <!-- Small image -->
+                         <img src="images/teacher_helping_learner.jpg" alt="The teacher is helipng the learner" width="30%" height="200">
+                    </a>
+        </div>
+
+    </main>
+           <button id="topBtn" onclick="scrollToTop()">⬆ Top</button> 
+    <footer>
+        <p class="footer-text">
+            &copy; 2009 The Love Trust&trade;
+        </p>
+    </footer>
+
+    <script>
+        //Scroll to top button
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            }); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Love Trust is a non-profit organisation in Midrand, South Africa,
+                 focused on providing quality Christian education and empowering vulnerable children and 
+                 communities.">
+    <meta name="keywords" content="Early Childhood Development, Nokuphila Primary School, vulnerable children
+                 quality Christian education, non-profit organisation in Midrand, The Love Trust NGO">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <style>
+        h1{
+            color: antiquewhite;
+        }
+
+        h2{
+            color: bisque;
+        }
+
+        h3{
+            color: blanchedalmond;
+        }
+
+        .navigation{
+            width:100%;
+        }
+
+        .nav-menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-wrap:wrap;
+            list-style:none;
+            margin:0;
+            padding:0;
+            width:100%;
+            background-color: rgb(235, 180, 97);
+        }
+
+        .nav-menu li{
+            flex:1;
+            min-width:120px;
+            text-align:center;
+        }
+
+        .nav-menu a{
+            display:block;
+            padding:15px 10px;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .nav-menu a:hover{
+            background-color:rgb(245, 180, 82);
+        }
+
+       .nav-menu a.active {
+            background-color: rgb(200, 140, 60);
+        }
+
+        .error{
+            color: rgba(219, 108, 43, 0.555);
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        #statusMessage{
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact-form{
+            margin: 20px 0;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea{
+            width: 100%;
+            max-width: 500px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 10px 15px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #8c6b07;
+        }
+
+        input[type=text ] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid rgba(255, 166, 0, 0.651);
+            border-radius: 8px;
+            background-color: #96701f;
+            color: white;
+        }
+
+        input[type=message ] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid rgba(255, 166, 0, 0.651);
+            border-radius: 8px;
+            background-color: #96701f;
+            color: white;
+        }
+
+        input[type=email ] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid rgba(255, 166, 0, 0.651);
+            border-radius: 8px;
+            background-color: #96701f;
+            color: white;
+        }
+
+        input[type=tel]{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            box-sizing:border-box;
+            border:2px solid rgba(255, 166, 0, 0.651);
+            border-radius:8px;
+            background-color:#96701f;
+            color:white;
+        }
+
+        input, select, textarea {
+            color: black !important;
+        }
+
+        input::placeholder,
+            textarea::placeholder {
+            color: black;
+        }
+
+        form button{
+            background-color: rgba(221, 158, 21, 0.747);
+            border: none;
+            cursor: pointer;
+        }
+
+        form .button:hover{
+            background: none;
+        }
+
+        .footer-text{
+            text-align:center;
+        }
+    </style>
+    
+    <!-- Webpage title -->
+    <title> The Love Trust - Contact </title>
+</head>
+<body>
+     <header>
+        <!-- Navigation menu -->
+      <nav aria-label="Main navigation">
+        <div class="navigation">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </div>
+     </nav>
+
+        <div class="container">
+            <h1 style="color: antiquewhite;"> The Love Trust </h1>
+              <!-- Logo -->
+             <img src="images/logo.png"
+                  alt="The Love Trust logo"
+                  style="max-width:150px; width:100%; height:auto;">
+        </div>
+    </header>
+    <br>
+
+    <main>
+        <section class="contact-info">
+            <!-- Contact information -->
+                <h2 style="color: bisque;"> Contact Us </h2>
+
+                <h3 style="color: blanchedalmond;"> Contact Information </h3>
+                    <p> Email: info@lovetrust.co.za </p>
+                    <p> Telephone number: 010 023 7370 </p>
+                    <p> Mobile number: 071 103 8722 </p>
+                    <p> WhatsApp number: 076 703 5779 </p>
+        </section>
+
+        <section class="contact-form">
+            <!-- Contact form -->
+                <h3 style="color: blanchedalmond;"> Contact form </h3>
+                 <form id="contactForm" action="thankyou.html" method="post">
+                    <!-- User's name input -->
+                   <label for="fullname"> Full Name </label> <br>
+                    <input 
+                        type="text" 
+                        id="fullname"
+                        placeholder="Enter your full name"
+                        minlength="10"
+                        maxlength="40"
+                        required> 
+                    <div class="error" id="nameError"></div> <br><br>
+
+                    <!-- User's phone number input -->
+                    <label for="phone">Phone Number</label> <br>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="e.g. 0789420115"
+                        pattern="^[0-9]{10,15}$"
+                        required> 
+                    <div class="error" id="phoneError"></div> <br><br>
+
+                    <!-- User's email input -->
+                    <label for="email"> Email </label> <br>
+                    <input 
+                        type="email" 
+                        id="email"
+                        placeholder="example@gmail.com"
+                        required> 
+                    <div class="error" id="emailError"></div> <br><br>
+
+                    <!-- Message textbox -->
+                    <label for="message"> Message </label> <br>
+                    <textarea 
+                        name="Message"
+                        id="message" 
+                        rows="5" 
+                        cols="40"
+                        placeholder="Type your message..."
+                        minlength="10"
+                        maxlength="500"
+                        required></textarea> 
+                    <div class="error" id="messageError"></div><br><br>
+
+                     <label for="messageType">Type of Message</label>
+                        <select id="messageType" required>
+                            <option value="">Select Message Type</option>
+                            <option value="General Enquiry">General Enquiry</option>
+                            <option value="Donation Query">Donation Query</option>
+                            <option value="Volunteer Request">Volunteer Request</option>
+                            <option value="School Information">School Information</option>
+                            <option value="Partnership Opportunity">Partnership Opportunity</option>
+                        </select>
+                    <div class="error" id="messageTypeError"></div> <br><br>
+
+            <!-- Submit button -->
+            <div class="button">
+                <button type="submit"> Submit Message </button>
+            </div>
+                <p id="statusMessage"> </p>
+                </form>
+            </section>
+        <br/>
+
+        <!-- Organisation's embedded location -->
+         <h3 style="color: blanchedalmond;"> Our location </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.9761668578894!2d28.161219199999998!3d-26.0015981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956f7222295a9d%3A0xa2a600aaf81347ac!2sLove%20Trust!5e0!3m2!1sen!2sza!4v1776178854288!5m2!1sen!2sza" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="The Love Trust Location">
+                
+        </iframe> <br><br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.9592708342816!2d28.15838377468213!3d-26.002151555774226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956c2aec72002b%3A0x568ffdeafcf33024!2sNokuphila%20School!5e0!3m2!1sen!2sza!4v1776179056988!5m2!1sen!2sza" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Nokuphila School Location">
+        </iframe>
+    </main>
+             <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
+    <footer>
+        <p class="footer-text">
+            &copy; 2009 The Love Trust&trade;
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm")
+        .addEventListener("submit", function(event){
+
+        event.preventDefault();
+
+        // Clear previous errors
+        document.querySelectorAll(".error").forEach(
+            error => error.textContent = ""
+        );
+
+        let fullName =
+            document.getElementById("fullname").value.trim();
+
+        let email =
+            document.getElementById("email").value.trim();
+
+        let phone =
+            document.getElementById("phone").value.trim();
+
+        let messageType =
+            document.getElementById("messageType").value;
+
+        let message =
+            document.getElementById("message").value.trim();
+
+        let status =
+            document.getElementById("statusMessage");
+
+        status.textContent = "";
+
+        let valid = true;
+
+        // Name validation
+        if(fullName === ""){
+            document.getElementById("nameError").textContent =
+            "Please enter your full name.";
+            valid = false;
+        }
+
+        // Phone validation
+        let phonePattern = /^[0-9]{10,15}$/;
+
+        if(!phonePattern.test(phone)){
+            document.getElementById("phoneError").textContent =
+            "Phone number must contain 10 to 15 digits.";
+            valid = false;
+        }
+
+        // Email validation
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if(!emailPattern.test(email)){
+            document.getElementById("emailError").textContent =
+            "Please enter a valid email address.";
+            valid = false;
+        }
+
+        // Message validation
+        if(message.length < 10){
+            document.getElementById("messageError").textContent =
+            "Message must be at least 10 characters.";
+            valid = false;
+        }
+
+        // Message type validation
+        if(messageType === ""){
+            document.getElementById("messageTypeError").textContent =
+            "Please select a message type.";
+            valid = false;
+        }
+
+        if(!valid){
+            status.textContent =
+            "Please correct the errors above.";
+
+            status.style.color = "red";
+            return;
+        }
+
+        // Create email
+        let recipient = "info@lovetrust.co.za";
+
+        let subject = encodeURIComponent(
+            "Website Contact Form - " + messageType
+        );
+
+        let body = encodeURIComponent(
+            "NEW WEBSITE ENQUIRY\n\n" +
+            "Full Name: " + fullName + "\n" +
+            "Email Address: " + email + "\n" +
+            "Phone Number: " + phone + "\n" +
+            "Message Type: " + messageType + "\n\n" +
+            "Message:\n" + message
+        );
+
+        let mailtoLink =
+            "mailto:" + recipient +
+            "?subject=" + subject +
+            "&body=" + body;
+
+        status.textContent =
+        "Opening your email application...";
+
+        status.style.color =
+        "brown";
+
+        document.getElementById("contactForm").reset();
+
+        alert(
+            "Thank you for contacting The Love Trust. Your email will now open and you will be redirected to the Thank You page."
+        );
+
+        window.location.href = mailtoLink;
+
+        setTimeout(function () {
+            window.location.href = "thankyou.html";
+        }, 5000);
+        });
+
+       //Scroll to top button
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            }); 
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Love Trust is a non-profit organisation in Midrand, South Africa,
+                 focused on providing quality Christian education and empowering vulnerable children and 
+                 communities.">
+    <meta name="keywords" content="Early Childhood Development, Nokuphila Primary School, vulnerable children
+                 quality Christian education, non-profit organisation in Midrand, The Love Trust NGO">
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <style>
+        h1{
+            color: antiquewhite;
+        }
+
+        h2{
+            color: bisque;
+        }
+
+        h3{
+            color: blanchedalmond;
+        }
+
+        .navigation{
+            width:100%;
+        }
+
+        .nav-menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-wrap:wrap;
+            list-style:none;
+            margin:0;
+            padding:0;
+            width:100%;
+            background-color: rgb(235, 180, 97);
+        }
+
+        .nav-menu li{
+            flex:1;
+            min-width:120px;
+            text-align:center;
+        }
+
+        .nav-menu a{
+            display:block;
+            padding: 15px 10px;;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .nav-menu a:hover{
+            background-color:rgb(245, 180, 82);
+        }
+
+       .nav-menu a.active {
+            background-color: rgb(200, 140, 60);
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 10px 15px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #8c6b07;
+        }
+
+        input[type=text ] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid rgba(255, 166, 0, 0.651);
+            border-radius: 8px;
+            background-color: #96701f;
+            color: white;
+        }
+
+        input[type=message ] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid rgba(255, 166, 0, 0.651);
+            border-radius: 8px;
+            background-color: #96701f;
+            color: white;
+        }
+
+        input[type=email ] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 2px solid rgba(255, 166, 0, 0.651);
+            border-radius: 8px;
+            background-color: #96701f;
+            color: white;
+        }
+
+        input[type=tel]{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            box-sizing:border-box;
+            border:2px solid rgba(255, 166, 0, 0.651);
+            border-radius:8px;
+            background-color:#96701f;
+            color:white;
+        }
+
+        input, select, textarea {
+            color: black !important;
+        }
+
+        input::placeholder,
+            textarea::placeholder {
+            color: black;
+        }
+
+        button{
+            background-color: rgb(235, 180, 97);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover{
+            background-color: rgb(245, 180, 82);
+        }
+
+        .footer-text{
+            text-align:center;
+        }
+    </style>
+    
+    <!-- Webpage title -->
+    <title> The Love Trust - Donate  </title>
+</head>
+<body>
+      <header>
+        <!-- Navigation menu -->
+     <nav aria-label="Main navigation">
+        <div class="navigation">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </div>
+     </nav>
+
+        <div class="container">
+            <h1 style="color: antiquewhite;"> The Love Trust </h1>
+             <!-- Logo -->
+             <img src="images/logo.png"
+                  alt="The Love Trust logo"
+                  style="max-width:150px; width:100%; height:auto;">
+        </div>
+    </header>
+    <br>
+
+    <main>
+        <h2 style="color: bisque;"> Support our programmes </h2>
+
+        <!-- Donation message -->
+         <p>
+            Your donation helps provide education , resources and support to the children and communities.
+         </p> <br>
+
+         <!-- Donation options -->
+          <h3 style="color: blanchedalmond;"> Select Donation amount </h3>
+          
+          <!-- Donation form-->
+           <form action="thankyou.html" method="post">
+            <fieldset>
+                <legend> Select Donation Amount </legend>
+            <!-- buttons for donation amount -->
+             <input type="radio" name="amount" value="100" required> R100 <br>
+             <input type="radio" name="amount" value="200"> R200 <br>
+             <input type="radio" name="amount" value="300"> R300 <br>
+             <input type="radio" name="amount" value="400"> R400 <br>
+             <input type="radio" name="amount" value="500"> R500 <br>
+             <input type="radio" name="amount" value="Custom amount"> Custom amount <br>
+            </fieldset> <br>
+
+            <br>
+
+             <label for="customAmount">Custom Amount (R)</label>
+             <input type="number" id="customAmount" name="customAmount" min="50"> <br><br>
+
+             <!-- User personal details -->
+              <label for="fullname"> Full Name </label> <br>
+              <input type="text" id="fullname" name="fullname" required> <br><br>
+
+              <label for="email"> Email </label> <br>
+              <input type="email" id="email" name="email" required> <br><br>
+
+             <label for="phone">Phone Number</label><br>
+             <input type="tel" id="phone" name="phone" required> <br><br>
+             
+            <!-- Submit button -->
+                <div class="button">
+                    <button type="submit"> Donate Now </button>
+                </div>
+           </form>
+
+           <!-- -->
+           <p>
+            Every contribution makes a difference in a child's life.
+           </p>
+    </main>
+            <button id="topBtn" onclick="scrollToTop()">⬆ Top</button>
+    <footer>
+          <p style="text-align:center;">
+              &copy; The Love Trust &trade; 2009
+         </p>
+    </footer>
+
+    <script>
+    document.querySelector("form").addEventListener("submit", function(event){
+
+        let name = document.getElementById("fullname").value;
+
+        if(name.length < 3){
+            alert("Please enter a valid name.");
+            event.preventDefault();
+        }
+
+    });
+
+            //Scroll to top button
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            }); 
+        }
+    </script>
+</body>
+</html>

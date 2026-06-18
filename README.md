@@ -64,7 +64,7 @@ CSS layouts such as the flexbox, grid-template-columns and display. CSS pseudocl
 I used media queries to apply to the different screen sizes when visiting my website. 
 
 
-##Part 3 - JavaScript
+## Part 3 - JavaScript
 I added animation to my hero-image, form validation, error messages to make my website more interactive for the users. There are relevant keywords, title tags and meta descriptions in all the webpages. I madse use of descriptive file names and alt text for my images. The websites link to each other and my website is mobile-friendly. 
 
 ##References

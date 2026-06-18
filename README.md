@@ -62,3 +62,10 @@ I added CSS features such as background, font-family, font size, different font 
 CSS layouts such as the flexbox, grid-template-columns and display. CSS pseudoclasses such as hover to create interactive elements to my navigation menu, images, buttons and dropdown content. 
 
 I used media queries to apply to the different screen sizes when visiting my website. 
+
+
+##Part 3 - JavaScript
+I added animation to my hero-image, form validation, error messages to make my website more interactive for the users. There are relevant keywords, title tags and meta descriptions in all the webpages. I madse use of descriptive file names and alt text for my images. The websites link to each other and my website is mobile-friendly. 
+
+##References
+OpenAi, 2026, Available at: https://chatgpt.com/c/6a32f07b-d528-83ea-8d34-9fe47b171b90 [Accessed 14 June 2026]

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Do not crawl the thank-you page
+Disallow: /thankyou.html
+
+# Sitemap
+Sitemap: https://www.thelovetrust.org/sitemap.xml

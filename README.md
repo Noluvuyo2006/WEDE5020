@@ -63,6 +63,11 @@ CSS layouts such as the flexbox, grid-template-columns and display. CSS pseudocl
 
 I used media queries to apply to the different screen sizes when visiting my website. 
 
+<img width="70" height="142" alt="Mobile phone screenshot" src="https://github.com/user-attachments/assets/ca3101c6-8731-4c2c-b2b2-61b970884d7c" />
+
+<img width="113" height="157" alt="Tablet screenshot" src="https://github.com/user-attachments/assets/fe404a45-8c90-42b5-84ad-13cb193eb85f" />
+
+<img width="242" height="139" alt="Laptop screenshot" src="https://github.com/user-attachments/assets/206a0ae6-56c9-4e6f-a8d1-e8e06fe8a98b" />
 
 ## Part 3 - JavaScript
 I added animation to my hero-image, form validation, error messages to make my website more interactive for the users. There are relevant keywords, title tags and meta descriptions in all the webpages. I madse use of descriptive file names and alt text for my images. The websites link to each other and my website is mobile-friendly. 

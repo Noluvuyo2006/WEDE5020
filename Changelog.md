@@ -5,7 +5,11 @@ HTML features in the website (Part 1)
 
 CSS features in the website (Part 2)
 
+Screenshots of how my website looks on different screen sizes (Part 2)
+
 JavaScript feautures in the webiste (Part 3)
+
+Reference list (Part 3)
 
 ### Changed
 I replaced the navigation class with nav-menu class
@@ -21,3 +25,4 @@ Navigation menu as part of the feedback from Part 2
 
 
 ### Removed
+Nothing
